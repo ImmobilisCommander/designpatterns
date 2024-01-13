@@ -5,7 +5,9 @@ VisualStudioVersion = 17.5.33502.453
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Éléments de solution", "Éléments de solution", "{54893DA0-59EA-494D-87BB-87C773ADD95C}"
 	ProjectSection(SolutionItems) = preProject
+		Directory.Packages.props = Directory.Packages.props
 		Patterns.txt = Patterns.txt
+		README.md = README.md
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Julien.Pattern.AbstractFactory", "Julien.Pattern.AbstractFactory\Julien.Pattern.AbstractFactory.csproj", "{89550F72-A541-4573-8882-D8C490FF9AA5}"
@@ -13,8 +15,6 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Julien.Pattern.Adapter", "Julien.Pattern.Adapter\Julien.Pattern.Adapter.csproj", "{16D642A6-F4D4-4F9B-824A-32702E5DFCBE}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Julien.Pattern.AspectOrientedProgramming", "Julien.Pattern.AspectOrientedProgramming\Julien.Pattern.AspectOrientedProgramming.csproj", "{2131ECA8-C61E-497B-9678-91DE37225411}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Julien.Pattern.Tests", "Julien.Pattern.Tests\Julien.Pattern.Tests.csproj", "{1814B0FD-FA5C-4A83-B9B0-7471B652D65D}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Julien.Pattern.Bridge", "Julien.Pattern.Bridge\Julien.Pattern.Bridge.csproj", "{7DA0A00B-182F-40F0-8419-1EDD0C938239}"
 EndProject
@@ -36,6 +36,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Julien.Pattern.Command", "J
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Julien.Pattern.Memento", "Julien.Pattern.Memento\Julien.Pattern.Memento.csproj", "{C6AC9DB6-C5EE-4D53-AD13-2C531925615A}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Julien.Pattern.Cqrs", "Julien.Pattern.Cqrs\Julien.Pattern.Cqrs.csproj", "{A7707023-5CB9-4135-A690-95E31517F8AA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Julien.Pattern.Composite", "Julien.Pattern.Composite\Julien.Pattern.Composite.csproj", "{723BCCB9-1569-4122-A6FD-74738E21752E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Julien.Pattern.Tests", "Julien.Pattern.Tests\Julien.Pattern.Tests.csproj", "{0DF71CAF-8D71-4476-9BDC-0F4111AA0B30}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -54,10 +60,6 @@ Global
 		{2131ECA8-C61E-497B-9678-91DE37225411}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2131ECA8-C61E-497B-9678-91DE37225411}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2131ECA8-C61E-497B-9678-91DE37225411}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1814B0FD-FA5C-4A83-B9B0-7471B652D65D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1814B0FD-FA5C-4A83-B9B0-7471B652D65D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1814B0FD-FA5C-4A83-B9B0-7471B652D65D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1814B0FD-FA5C-4A83-B9B0-7471B652D65D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{7DA0A00B-182F-40F0-8419-1EDD0C938239}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7DA0A00B-182F-40F0-8419-1EDD0C938239}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7DA0A00B-182F-40F0-8419-1EDD0C938239}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -98,6 +100,18 @@ Global
 		{C6AC9DB6-C5EE-4D53-AD13-2C531925615A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C6AC9DB6-C5EE-4D53-AD13-2C531925615A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C6AC9DB6-C5EE-4D53-AD13-2C531925615A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7707023-5CB9-4135-A690-95E31517F8AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7707023-5CB9-4135-A690-95E31517F8AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7707023-5CB9-4135-A690-95E31517F8AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7707023-5CB9-4135-A690-95E31517F8AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{723BCCB9-1569-4122-A6FD-74738E21752E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{723BCCB9-1569-4122-A6FD-74738E21752E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{723BCCB9-1569-4122-A6FD-74738E21752E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{723BCCB9-1569-4122-A6FD-74738E21752E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DF71CAF-8D71-4476-9BDC-0F4111AA0B30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DF71CAF-8D71-4476-9BDC-0F4111AA0B30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DF71CAF-8D71-4476-9BDC-0F4111AA0B30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DF71CAF-8D71-4476-9BDC-0F4111AA0B30}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

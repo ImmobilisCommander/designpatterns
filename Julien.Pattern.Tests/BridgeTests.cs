@@ -22,13 +22,11 @@ namespace Julien.Pattern.Tests
         [Fact]
         public void BridgeTest()
         {
-            var logger1 = context.ServiceProvider.GetRequiredService<ILogger<DrawCircleWithPen>>();
-            logger1 = Substitute.For<ILogger<DrawCircleWithPen>>();
+            var logger1 = Substitute.For<ILogger<DrawCircleWithPen>>();
             Circle redCircle = new (100, 100, 10, new DrawCircleWithPen(logger1));
             redCircle.Draw();
 
-            var logger2 = context.ServiceProvider.GetRequiredService<ILogger<DrawCircleWithBrush>>();
-            logger2 = Substitute.For<ILogger<DrawCircleWithBrush>>();
+            var logger2 = Substitute.For<ILogger<DrawCircleWithBrush>>();
             Circle greenCircle = new (200, 200, 20, new DrawCircleWithBrush(logger2));
             greenCircle.Draw();
 
