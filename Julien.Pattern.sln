@@ -5,6 +5,7 @@ VisualStudioVersion = 17.5.33502.453
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Éléments de solution", "Éléments de solution", "{54893DA0-59EA-494D-87BB-87C773ADD95C}"
 	ProjectSection(SolutionItems) = preProject
+		Directory.Build.props = Directory.Build.props
 		Directory.Packages.props = Directory.Packages.props
 		Patterns.txt = Patterns.txt
 		README.md = README.md
@@ -41,6 +42,12 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Julien.Pattern.Composite", "Julien.Pattern.Composite\Julien.Pattern.Composite.csproj", "{723BCCB9-1569-4122-A6FD-74738E21752E}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Julien.Pattern.Tests", "Julien.Pattern.Tests\Julien.Pattern.Tests.csproj", "{0DF71CAF-8D71-4476-9BDC-0F4111AA0B30}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Julien.Pattern.App", "Julien.Pattern.App\Julien.Pattern.App.csproj", "{A30810F3-D804-47F5-BBA0-65092EC9A290}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{D17D6AAC-B10C-4412-8913-FCF9D8D12A26}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{A99A0FB9-B11C-49D1-ADFC-A41946E9938C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -112,9 +119,17 @@ Global
 		{0DF71CAF-8D71-4476-9BDC-0F4111AA0B30}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0DF71CAF-8D71-4476-9BDC-0F4111AA0B30}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0DF71CAF-8D71-4476-9BDC-0F4111AA0B30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A30810F3-D804-47F5-BBA0-65092EC9A290}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A30810F3-D804-47F5-BBA0-65092EC9A290}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A30810F3-D804-47F5-BBA0-65092EC9A290}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A30810F3-D804-47F5-BBA0-65092EC9A290}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0DF71CAF-8D71-4476-9BDC-0F4111AA0B30} = {A99A0FB9-B11C-49D1-ADFC-A41946E9938C}
+		{A30810F3-D804-47F5-BBA0-65092EC9A290} = {D17D6AAC-B10C-4412-8913-FCF9D8D12A26}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {823073E8-9D37-4A9E-8C9D-717DC36B5412}

@@ -1,7 +1,5 @@
 ﻿namespace Julien.Pattern.Mediator
 {
-    using Microsoft.Extensions.DependencyInjection;
-
     using System.Collections.Generic;
 
     // Concrete Mediator class
@@ -25,16 +23,4 @@
             }
         }
     }
-
-    public static class Ext
-    {
-        public static IServiceCollection AddMediator(this IServiceCollection services)
-        {
-            services.AddSingleton<IChatRoom, ChatRoom>();
-            services.AddTransient<IUser, User>();
-
-            return services;
-        }
-    }
-
 }

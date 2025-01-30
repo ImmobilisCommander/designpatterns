@@ -1,6 +1,6 @@
 ﻿namespace Julien.Pattern.BulkHead
 {
-    public class DatabaseService
+    internal class DatabaseService : IDatabaseService
     {
         private static readonly SemaphoreSlim _semaphore = new(10);
 

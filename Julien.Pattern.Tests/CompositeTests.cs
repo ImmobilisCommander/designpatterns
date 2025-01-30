@@ -6,8 +6,6 @@
 
     using NSubstitute;
 
-    using Xunit.Abstractions;
-
     public class CompositeTests : IClassFixture<TestsFixture>
     {
         private readonly TestsFixture fixture;

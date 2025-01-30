@@ -2,7 +2,7 @@
 
 namespace Julien.Pattern.Visitor
 {
-    public static class Ext
+    public static class DependencyInjectionExtensions
     {
         public static IServiceCollection AddVisitor(this IServiceCollection services)
         {

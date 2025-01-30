@@ -2,7 +2,7 @@
 
 namespace Julien.Pattern.Command
 {
-    public static class Ext
+    public static class DependencyInjectionExtensions
     { 
         public static IServiceCollection AddCommand(this IServiceCollection services)
         {
