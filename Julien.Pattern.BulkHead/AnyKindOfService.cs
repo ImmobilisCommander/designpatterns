@@ -86,7 +86,7 @@ namespace Julien.Pattern.BulkHead
         {
             int result = 0;
 
-            AsyncBulkheadPolicy bulkheadPolicy = Policy.BulkheadAsync(maxDegreeOfParallelism, 4, (context) =>
+            AsyncBulkheadPolicy bulkheadPolicy = Policy.BulkheadAsync(maxDegreeOfParallelism, 6, (context) =>
             {
                 logger.LogWarning("Rejected call {index}...", (int)context["index"]);
                 return Task.CompletedTask;
